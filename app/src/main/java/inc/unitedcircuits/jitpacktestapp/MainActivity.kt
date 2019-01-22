@@ -2,6 +2,7 @@ package inc.unitedcircuits.jitpacktestapp
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import inc.unitedcircuits.jitpacktestlibrary.TestClass
 
 class MainActivity : AppCompatActivity() {
 
@@ -9,5 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        TestClass.add(5.0,7.0)
     }
 }
